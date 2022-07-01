@@ -1,5 +1,4 @@
 #/usr/bin/python3
-
 from algo import calculate_result
 from util import read_data, output_data
 
