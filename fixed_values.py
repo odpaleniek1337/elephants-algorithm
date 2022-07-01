@@ -1,0 +1,7 @@
+__all__ = [
+    'MAX_MASS',
+    'MAX_NUMBERS'
+]
+
+MAX_MASS = 6500
+MAX_NUMBERS = 1000000
