@@ -1,9 +1,13 @@
+from typing import Tuple, List, Dict
 
-
-def read_data():
+def read_data() -> Tuple[int, List[int], Dict[int, int]]:
+    """Returns number of elements & masses read from stdin and permutations mapped to ints"""
     elements = int(input())
     masses = list(map(int, input().split()))
     numbers = list(map(int, input().split()))
-    target_numbers = list(map(int, input().split()))
-    checked = [False for x in range(elements)]
-    return elements, masses, numbers, target_numbers, checked
+    permutations = {int(x): numbers[i] for i, x in enumerate(input().split())}
+    return elements, masses, permutations
+
+def output_data(result: int) -> None:
+    """Prints output to stdout"""
+    print(result)
