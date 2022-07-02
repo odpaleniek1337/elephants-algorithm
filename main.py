@@ -4,8 +4,7 @@ from util import read_data, output_data
 
 def main() -> None:
     elements, masses, permutations = read_data()
-    checked = [False for x in range(elements)]
-    price = calculate_result(elements, masses, permutations, checked)
+    price = calculate_result(elements, masses, permutations)
     output_data(price)
 
 if __name__ == '__main__':
